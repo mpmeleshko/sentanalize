@@ -1,0 +1,19 @@
+.product-list {
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    margin: .46154em .38462em 0 0;
+    padding: 0 0 1.84615em;
+    overflow: hidden;
+    display: flex;
+}
+
+.product-image-list {
+    margin-top: 5px;
+    width: 200px;
+    height: 167px;
+}
+
+.card {
+    background-color: #f8f9fa !important;
+    border-radius: .5rem !important;
+}
