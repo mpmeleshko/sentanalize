@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 Route::get('check', 'ParserController@check');
 Route::get('products', 'ProductController@index');
+Route::get('products/{id}', 'ProductController@show');

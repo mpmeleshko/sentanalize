@@ -12,4 +12,6 @@ use Prettus\Repository\Contracts\RepositoryInterface;
 interface ProductRepositoryInterface extends RepositoryInterface
 {
     public function getProductsByCategory($id);
+
+    public function getProductsBySearch($categoryId, $search);
 }

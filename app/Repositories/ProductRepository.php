@@ -23,10 +23,28 @@ class ProductRepository extends BaseRepository implements ProductRepositoryInter
         return Product::class;
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function getProductsByCategory($id)
     {
         return $this->model
             ->where('category_id', $id)
+            ->paginate(12);
+    }
+
+    /**
+     * @param $categoryId
+     * @param $search
+     * @return mixed
+     */
+    public function getProductsBySearch($categoryId, $search)
+    {
+        return $this->model
+            ->where('category_id', $categoryId)
+            ->where('name', 'like', '%'.$search.'%')
+            ->orWhere('description', 'like', '%'.$search.'%')
             ->paginate(12);
     }
 }
