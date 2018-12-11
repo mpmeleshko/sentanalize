@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 use simplehtmldom_1_5\simple_html_dom;
 use Sunra\PhpSimple\HtmlDomParser;
 
-class AmazonParser
+class RozetkaParser
 {
     const MAIN_PAGE = 'http://rozetka.com.ua/';
 
@@ -27,7 +27,7 @@ class AmazonParser
 
 
     /**
-     * AmazonParser constructor.
+     * RozetkaParser constructor.
      * @param HtmlDomParser $HTMLDomParser
      * @param ProductRepositoryInterface $productRepository
      * @param ReviewRepositoryInterface $reviewRepository

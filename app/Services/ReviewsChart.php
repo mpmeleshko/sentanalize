@@ -21,7 +21,7 @@ class ReviewsChart
         $chart = Charts::create('donut', 'highcharts')
             ->title('Анализ отзывов')
             ->labels(['Позитивные', 'Негавные'])
-            ->values([5,7])
+            ->values([6,6])
             ->responsive(false);
 
         return $chart;
